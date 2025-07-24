@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/hooks.ts","./src/main.tsx","./src/vite-env.d.ts","./src/components/usermodal.tsx","./src/components/usertable.tsx","./src/store/index.ts","./src/store/api/gettodosslice.ts","./src/store/api/getusersslice.ts","./src/store/utils/asyncstate.ts","./src/store/utils/handleasyncthunks.ts"],"version":"5.8.3"}

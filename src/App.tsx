@@ -1,5 +1,5 @@
 import './App.scss';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from './hooks';
 import { fetchUsers } from './store/API/getUsersSlice';
 import UserTable from './components/UserTable';
