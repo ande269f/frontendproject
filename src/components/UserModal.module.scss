@@ -1,0 +1,45 @@
+.modal {
+    padding: 1rem;
+}
+
+.contentGrid {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+:global(.modalWidthOverride) {
+  max-width: 900px !important;
+  width: 100%;
+}
+
+.userInfo {
+  flex: 1;
+  min-width: 250px;
+}
+
+.todos {
+  flex: 1;
+  min-width: 250px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+
+      input[type='checkbox'] {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
