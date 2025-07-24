@@ -33,7 +33,7 @@ const UserModal: React.FC<UserModalProps> = ({ isOpen, onOpenChange, user }) => 
   return (
     <Modal isOpen={isOpen} onOpenChange={onOpenChange} isDismissable className={styles.modal}>
       <ModalContent className="modalWidthOverride">
-          <ModalBody>
+          <ModalBody className="modalBodyScrollable">
             {user ? (
               <div className={styles.contentGrid}>
                 <div className={styles.userInfo}>
@@ -50,6 +50,7 @@ const UserModal: React.FC<UserModalProps> = ({ isOpen, onOpenChange, user }) => 
                 </div>
 
                 <div className={styles.todos}>
+                  <p className={styles.todoHeader}><strong>Todos:</strong></p>
 
                   {loading && <p>Loader todos...</p>}
                   {error && <p>Fejl i loading af todos: {error}</p>}

@@ -18,9 +18,19 @@
   width: 100%;
 }
 
+:global(.modalBodyScrollable) {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
 .userInfo {
   flex: 1;
   min-width: 250px;
+}
+
+.todoHeader {
+  padding-bottom: 1rem;
+
 }
 
 .todos {
